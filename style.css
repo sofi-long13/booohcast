@@ -1,0 +1,502 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+  }
+  @font-face {
+    font-family: titulo ;
+    src: url( ./halloweenn/HALLOWEENN\ Regular.otf)
+  }
+
+  @font-face {
+    font-family: barra;
+    src: url(./bloody_scary/Bloody\ Scary.ttf);
+  }
+  
+
+  @font-face {
+    font-family: hovertitulo;
+    src: url(./help_me/HelpMe.ttf);
+  }
+
+  body{
+    background-color: black;
+  }
+
+ 
+ @keyframes  animacaodacordaletra {
+ 
+     0%{
+      color: #42020e;
+         font-size:  0.5rem ;
+         font-family: hovertitulo; 
+         text-shadow : 10px  10px  5px ;
+
+     }
+     
+     30%{
+         color : #000000 ;
+         font-size:  1rem ;
+         font-family: hovertitulo; 
+       text-shadow:  40px  40px  10px ;
+     
+     }
+ 
+     60%{
+      color: #42020e ;
+        font-size:  1.5rem ;
+        font-family: hovertitulo; 
+        text-shadow : 10px  10px  10px ;
+     }
+ 
+     90%{
+         color : #000000 ;
+         font-size :2rem ;
+         font-family: hovertitulo; 
+        text-shadow: 10px  10px  5px ;
+     }
+     100%{
+        color: #dfc6c6;
+        font-size: 3rem ;
+         font-family: titulo;
+         text-shadow : 0 ;
+ 
+     }
+ 
+ 
+     }
+  
+  nav{
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #00000000;
+      padding: 20px 0;
+  }
+  
+  nav ul{
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+  }
+  
+  nav ul li{
+      margin: 0 25px;
+  
+  }
+  
+  nav ul li a{
+      color: #eee7e7;
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 12px 0;
+      transition: 0.2s;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  nav ul li a:hover{
+      color: #580615;
+      font-size: 1.3rem;
+      font-family: barra;
+      padding: 5px 0;
+      
+  }
+  
+  #home{
+      background-image: url(https://wallpapercave.com/wp/wp2849910.jpg
+      );
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      text-align: center; 
+      flex-direction: column;
+      text-align: center; 
+      justify-items: center;
+    display : flex ;
+    justify-content : center ;
+    align-items : center ;
+    animation : backgroundanimation 3s  infinite ;
+    animation : animacaodacordaletra 4s  infinite ;
+  }
+
+  .animacao {
+    font-size:  3em ;
+ }
+  
+ 
+  
+  #podcast{
+    background-color: #000000;
+    height: 100vh;
+  }
+
+
+#podcast video{
+    width: 700px;
+    height: 550px; 
+    margin-left: 25%;
+   background-color: #180000;
+   border-radius: 10%;
+   margin-top: 25px;
+  
+  }
+
+  h1{
+    font-size: 3rem;
+    text-align: center;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin-top: 7%;
+    transform: 2s;
+  }
+
+  h1:hover{
+    color: #c9c9c9;
+  }
+  h1::selection{
+    background-color: rgb(58, 2, 2);
+    color: #c9c9c9;
+    border-radius: 20%;
+}
+
+#home p::selection{
+  background-color: #000000;
+  color: #c4bfbf;
+  border-radius: 20%;
+}
+
+
+
+#home p{
+    font-family: hovertitulo;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #5f5656;
+
+}
+
+#home p:hover{
+    font-family: hovertitulo;
+    text-align: center;
+    font-size: 2.3rem;
+    color: #ffffff;
+    margin-top: 7%;
+
+}
+
+
+
+   p{
+      margin: 30px;
+      padding: 30px;
+      color: white;
+      font-size: 1.1rem;
+      text-align: justify;
+      align-items: center;
+    }
+     
+    p::selection{
+      background-color: #42020e;
+      color: #000000;
+
+    }
+
+      section{
+        height: 100vh;
+      }
+    
+    .parallax1{
+        background-image: url(https://gifdb.com/images/high/terror-smiling-ghost-wvngjhgo1021k97w.gif);
+       
+    }
+    .parallax2{
+        background-image: url(https://i.pinimg.com/originals/30/30/7c/30307c9e148edefb527c340eff593927.gif);
+    }
+    
+    
+    .parallax{
+        height: 100vh;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center ;
+    }
+    
+    
+    footer{
+
+      background-color: #000000;
+      padding-left: 40%;
+      height: 10px;
+      margin-bottom: 0;
+    }
+
+    @media(max-width:320px) {
+      /* @font-face {
+        font-family: titulo ;
+        src: url( ./halloweenn/HALLOWEENN\ Regular.otf)
+      }
+    
+      @font-face {
+        font-family: barra;
+        src: url(./bloody_scary/Bloody\ Scary.ttf);
+      }
+      
+    
+      @font-face {
+        font-family: hovertitulo;
+        src: url(./help_me/HelpMe.ttf);
+      }
+     */
+
+      #home{ background-image: url(https://wallpapercave.com/wp/wp2849910.jpg
+        );
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        text-align: center; 
+        flex-direction: column;
+        text-align: center; 
+        justify-items: center;
+        background-position: top;
+
+      }
+
+      @keyframes  animacaodacordaletra {
+ 
+        0%{
+         color: #42020e;
+            font-size: 10px ;
+            font-family: hovertitulo; 
+            text-shadow : 10px  10px  5px ;
+   
+        }
+        
+        30%{
+            color : #ffeaea ;
+            font-size:  12px ;
+            font-family: hovertitulo; 
+          text-shadow:  40px  40px  10px ;
+        
+        }
+    
+        60%{
+         color: #42020e ;
+           font-size:  14px ;
+           font-family: hovertitulo; 
+           text-shadow : 10px  10px  10px ;
+        }
+    
+        90%{
+            color : #ffd5d5 ;
+            font-size :16px ;
+            font-family: hovertitulo; 
+           text-shadow: 10px  10px  5px ;
+        }
+        100%{
+           color: #dfc6c6;
+           font-size: 18px ;
+            font-family: titulo;
+            text-shadow : 0 ;
+    
+        }
+    
+    
+        }
+
+      h1{
+        font-size: 1.5rem;
+        text-align: center;
+        transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        margin-top: 25%;
+        transform: 2s;
+      }
+    
+    
+      h1:hover{
+        color: #cebabaee;
+        font-size: 1.7rem;
+        margin-top: 40%;
+        font-family: titulo;
+    }
+
+    
+#home p{
+  font-family: hovertitulo;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #5f5656;
+
+}
+
+#home p:hover{
+  font-family: hovertitulo;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-top: 7%;
+}
+
+p{
+  font-size: 11px;
+  margin: 15px;
+  padding: 15px;
+}
+
+#podcast video{
+    width: 250px;
+    height: 100px;
+    margin-right:10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+   
+  }
+
+  .parallax{
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center ;
+}
+
+    }
+
+    @media(max-width:430px) {
+      /* @font-face {
+        font-family: titulo ;
+        src: url( ./halloweenn/HALLOWEENN\ Regular.otf)
+      }
+    
+      @font-face {
+        font-family: barra;
+        src: url(./bloody_scary/Bloody\ Scary.ttf);
+      }
+      
+    
+      @font-face {
+        font-family: hovertitulo;
+        src: url(./help_me/HelpMe.ttf);
+      } */
+    
+
+      #home{ background-image: url(https://wallpapercave.com/wp/wp2849910.jpg
+        );
+        height: 120vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        text-align: center; 
+        flex-direction: column;
+        text-align: center; 
+        justify-items: top;
+        background-position: top;
+
+      }
+
+      @keyframes  animacaodacordaletra {
+ 
+        0%{
+         color: #42020e;
+            font-size: 13px ;
+            font-family: hovertitulo; 
+            text-shadow : 10px  10px  5px ;
+   
+        }
+        
+        30%{
+            color : #ffe6e6 ;
+            font-size:  15px ;
+            font-family: hovertitulo; 
+          text-shadow:  40px  40px  10px ;
+        
+        }
+    
+        60%{
+         color: #42020e ;
+           font-size:  17px ;
+           font-family: hovertitulo; 
+           text-shadow : 10px  10px  10px ;
+        }
+    
+        90%{
+            color : #ffe7e7 ;
+            font-size :19px ;
+            font-family: hovertitulo; 
+           text-shadow: 10px  10px  5px ;
+        }
+        100%{
+           color: #dfc6c6;
+           font-size: 21px ;
+            font-family: titulo;
+            text-shadow : 0 ;
+    
+        }
+    
+    
+        }
+
+      h1{
+
+        font-size: 1.5rem;
+        text-align: center;
+        transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        margin-top: 15%;
+        transform: 2s;
+      }
+    
+    
+      h1:hover{
+        color: #cebabaee;
+        font-size: 1.7rem;
+        margin-top: 40%;
+        font-family: titulo;
+    }
+
+    
+#home p{
+  font-family: hovertitulo;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #5f5656;
+
+}
+
+#home p:hover{
+  font-family: hovertitulo;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-top: 7%;
+}
+
+p{
+  font-size: 11px;
+  margin: 15px;
+  padding: 15px;
+}
+
+#podcast video{
+    width: 350px;
+    height: 200px;
+    margin-right:10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+   
+  }
+
+  .parallax{
+    height: 120vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center ;
+}
+
+    }
+
+
+   
